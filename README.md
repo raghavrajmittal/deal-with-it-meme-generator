@@ -4,7 +4,14 @@
 - Extract facial landmarks (specifically eye regions) using Dlib
 - Create a GIF using ImageMagick
 
-Essentially, the application detects faces and the eye regions, computes the angles between the eyes, and rotates the image of the sunglasses accordingly. Then it creates multiple frames starting with the sunglasses on top and slowly falling down to the eye region. The 'DEAL WITH IT' text is displayed in the last frame, and the resulting gif is stored as output (.gif file).
+Essentially, the application detects faces and the eye regions, computes the angles between the eyes, and rotates the image of the sunglasses accordingly. Then it creates multiple frames starting with the sunglasses on top and slowly falling down to the eye region. The 'Deal with it' text is displayed in the last frame, and the resulting gif is stored as output (.gif file).
+
+
+An example is shown:
+Original Image (me): ![Original](images/raghav.jpg)
+
+Resulting GIF (Cooler me): ![Meme](raghav.gif)
+
 
 **Running the program** <br/>
     $ python create_gif.py --config config.json --image images/raghav.jpg --output out.gif
